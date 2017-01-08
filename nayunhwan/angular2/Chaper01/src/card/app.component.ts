@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'card',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 
 
-export class AppComponent {
-  title = 'app works!ㄴ';
+export class Card {
+  public name : String;
+  
+  title = 'card';
   text = 'hello world!';
 }
