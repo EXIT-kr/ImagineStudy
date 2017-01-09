@@ -1,0 +1,28 @@
+<div class="container-fluid">
+  <div class="col-md-2 left">
+    <nav id="myScrollspy" class = "side-nav">
+      <ul class="nav nav-pills nav-stacked">
+        <li *ngFor="let part of parts"><a [routerLink]="['/af']" fragment={{part.id}} (click)="onAnchorClick()">{{part.h2}}</a></li>
+
+
+      </ul>
+    </nav>
+  </div>
+  <div class="col-md-10 main">
+    <div class="row">
+      <h1 class="top">AngularFire Note</h1>
+    </div>
+    <div class="row topic" *ngFor="let part of parts">
+      <div class = "scroll-point" id = {{part.id}}></div>
+      <h2>{{part.h2}}</h2>
+      <p>{{part.topP}}</p>
+      <div *ngFor="let section of part.sections">
+        <h4>{{section.h4}}</h4>
+        <pre>{{section.code}}</pre>
+        <p>{{section.p}}</p>
+
+      </div>
+    </div>
+  </div>
+
+</div>

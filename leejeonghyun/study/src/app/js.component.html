@@ -1,0 +1,85 @@
+<div class="container-fluid">
+  <div class="col-md-2 left">
+    <nav id="myScrollspy" class = "side-nav">
+      <ul class="nav nav-pills nav-stacked">
+        <li *ngFor="let part of parts"><a [routerLink]="['/js']" fragment={{part.id}} (click)="onAnchorClick()">{{part.h2}}</a></li>
+
+
+      </ul>
+    </nav>
+  </div>
+  <div class="col-md-10 main">
+    <div class="row">
+      <h1 class="top">JavaScript Note</h1>
+    </div>
+    <!--<div class="row topic">-->
+      <!--<div class = "scroll-point" id = "section1"></div>-->
+      <!--<h2>Closure</h2>-->
+      <!--closure는 외부함수가 만료되도 내부함수가 외부함수의 맥락을 계속 사용할 수 있는 특징을 의미한다.-->
+      <!--<h4>closure1.js</h4>-->
+      <!--<pre>-->
+<!--{{code1}}-->
+      <!--</pre>-->
+
+      <!--<h4>closure2.js</h4>-->
+      <!--<pre>-->
+<!--{{code2}}-->
+      <!--</pre>-->
+      <!--<p>{{paragraph1}}</p>-->
+      <!--<h4>wrong.js</h4>-->
+      <!--<pre>-->
+<!--{{code3}}-->
+      <!--</pre>-->
+      <!--<p>{{paragraph2}}</p>-->
+      <!--<h4>nice.js</h4>-->
+      <!--<pre>-->
+<!--{{code4}}-->
+      <!--</pre>-->
+      <!--<p>{{paragraph3}}</p>-->
+  <!--</div>-->
+  <!--<div class="row topic">-->
+    <!--<div class = "scroll-point" id = "section2"></div>-->
+    <!--<h2>New And Constructor</h2>-->
+    <!--<h4>bad.js</h4>-->
+    <!--<pre>-->
+<!--{{code5}}-->
+    <!--</pre>-->
+    <!--<p>{{paragraph4}}</p>-->
+    <!--<h4>good.js</h4>-->
+    <!--<pre>-->
+<!--{{code6}}-->
+    <!--</pre>-->
+    <!--<p>{{paragraph5}}</p>-->
+  <!--</div>-->
+    <!--<div class="row topic">-->
+      <!--<div class = "scroll-point" id = "section3"></div>-->
+      <!--<h2>This</h2>-->
+      <!--<p>{{p6}}</p>-->
+      <!--<h4>this1.js</h4>-->
+      <!--<pre>-->
+<!--{{code7}}-->
+    <!--</pre>-->
+      <!--<h4>this2.js</h4>-->
+      <!--<pre>-->
+<!--{{code8}}-->
+    <!--</pre>-->
+      <!--<h4>this3.js</h4>-->
+      <!--<pre>-->
+<!--{{code9}}-->
+    <!--</pre>-->
+    <!--</div>-->
+
+    <div class="row topic" *ngFor="let part of parts">
+      <div class = "scroll-point" id = {{part.id}}></div>
+      <h2>{{part.h2}}</h2>
+      <p>{{part.topP}}</p>
+      <div *ngFor="let section of part.sections">
+        <h4>{{section.h4}}</h4>
+        <pre>{{section.code}}</pre>
+        <p>{{section.p}}</p>
+
+      </div>
+    </div>
+</div>
+
+</div>

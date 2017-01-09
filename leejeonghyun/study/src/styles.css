@@ -1,0 +1,20 @@
+.topic{
+  margin-bottom: 60%;
+
+}
+.top{
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+.navbar{
+  width:100%;
+  position: fixed;
+  z-index: 1;
+}
+.side-nav{
+  position: fixed;
+  margin-top: 10%;
+}
+.scroll-point{
+  height:50px;
+}

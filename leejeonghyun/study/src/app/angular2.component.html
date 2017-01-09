@@ -1,0 +1,164 @@
+
+<div class="container-fluid">
+  <div class="col-md-2 left">
+    <nav id="myScrollspy" class = "side-nav">
+    <ul class="nav nav-pills nav-stacked">
+      <li><a [routerLink]="['/angular2']" fragment="section1" (click)="onAnchorClick()">Setting</a></li>
+      <li><a [routerLink]="['/angular2']" fragment="section2" (click)="onAnchorClick()">Generate Component</a></li>
+      <li><a [routerLink]="['/angular2']" fragment="section3" (click)="onAnchorClick()">Simple Data Binding</a></li>
+      <li><a [routerLink]="['/angular2']" fragment="section4" (click)="onAnchorClick()">Simple Event Binding</a></li>
+      <li><a [routerLink]="['/angular2']" fragment="section5" (click)="onAnchorClick()">Model And Service</a></li>
+      <li><a [routerLink]="['/angular2']" fragment="section6" (click)="onAnchorClick()">Routing</a></li>
+      <li><a [routerLink]="['/angular2']" fragment="section7" (click)="onAnchorClick()">Write Code</a></li>
+      <li><a [routerLink]="['/angular2']" fragment="section8" (click)="onAnchorClick()">Href Scrolling</a></li>
+    </ul>
+    </nav>
+  </div>
+  <div class="col-md-10 main">
+    <div class="row">
+      <h1 class="top">Angular2 Note</h1>
+    </div>
+    <div class="row topic">
+      <div class = "scroll-point" id = "section1"></div>
+      <h2>Setting</h2>
+      <pre class="terminal">
+jhLee$ sudo npm install -g angular -cli@lastest
+jhLee$ ng new Project1
+jhLee$ ng serve</pre>
+    </div>
+    <div class="row topic">
+      <div class = "scroll-point" id = "section2"></div>
+      <h2>Generate Component</h2>
+      <pre class="terminal">
+jhLee$ ng g c testComponent --flat --is --it --spec false </pre>
+      <p>
+        <code>ng new [projectName]</code>명령어로 생성된 directory 내에서 타이핑 해야 한다.</p>
+      <p>우선 --로 시작하는 부분은 전부 flag이며 component를 생성하는데 옵션을 부가한다. </p>
+      <p>기본적으로 아무 옵션도 주지 않았을때
+        <kbd>projectName.component.css</kbd>,
+        <kbd>projectName.component.html</kbd>,
+        <kbd>projectName.component.ts</kbd>
+        <kbd>projectName.component.spec.ts</kbd> 4개의 파일이 projectName directory와 함께 생성된다.</p>
+      <table class="table table-bordered">
+        <thead>
+        <tr>
+          <th>flag</th>
+          <th>option</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>--flat</td>
+          <td>directory 생성 안함</td>
+        </tr>
+        <tr>
+          <td>--is</td>
+          <td>css파일 생성 안함</td>
+        </tr>
+        <tr>
+          <td>--it</td>
+          <td>HTML파일 생성 안함</td>
+        </tr>
+        <tr>
+          <td>--spec false</td>
+          <td>spec.ts파일 생성 안함</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="row topic">
+      <div class = "scroll-point" id = "section3"></div>
+      <h2>Simple Data Binding</h2>
+      <h4>app.component.ts</h4>
+      <pre>{{simpleDataBindingAppComponentTs}}</pre>
+      <h4>app.component.html</h4>
+      <pre>{{simpleDataBindingAppComponentHtml}}</pre>
+
+
+    </div>
+
+    <div class="row topic">
+      <div class = "scroll-point" id = "section4"></div>
+      <h2>Simple Event Binding</h2>
+      <h4>app.component.ts</h4>
+      <pre>{{simpleEventBindingAppComponentTs}}</pre>
+      <h4>app.component.html</h4>
+      <pre>{{simpleEventBindingAppComponentHtml}}</pre>
+
+
+    </div>
+    <div class="row topic">
+      <div class = "scroll-point" id = "section5"></div>
+      <h2>Model And Service</h2>
+      <h4>app.model.ts</h4>
+      <pre>{{modelAndServiceAppModelTs}}</pre>
+      <h4>app.service.ts</h4>
+      <pre>{{modelAndServiceAppServiceTs}}</pre>
+      <h4>app.module.ts</h4>
+      <pre>{{modelAndServiceAppModuleTs}}</pre>
+      <h4>app.component.ts</h4>
+      <pre>{{modelAndServiceAppComponentTs}}</pre>
+      <h4>순서 정리</h4>
+      <ol>
+        <li>
+          <kbd>Model</kbd> 생성</li>
+        <li>
+          <kbd>Service</kbd>에
+          <kbd>Model</kbd>을 import</li>
+        <li>
+          <kbd>Component</kbd>에
+          <kbd>Service</kbd>와
+          <kbd>Model</kbd> import</li>
+        <li><code>provider</code>에
+          <kbd>Service</kbd> 할당</li>
+        <li><code>Component constructor</code>에서 <code>Service class</code> 객체화</li>
+        <li><code>Component ngOnInit</code>에서 <code>Service data</code> 초기화</li>
+      </ol>
+    </div>
+    <div class="row topic">
+      <div class = "scroll-point" id = "section6"></div>
+      <h2>Routing</h2>
+      <h4>app.routing.ts</h4>
+      <pre>{{code1}}</pre>
+      <h4>app.module.ts</h4>
+      <pre>{{code2}}</pre>
+      <h4>header.component.html</h4>
+      <pre>{{code3}}</pre>
+      <h4>app.component.html</h4>
+      <pre>{{code4}}</pre>
+      <h4>순서정리</h4>
+      <ol>
+        <li>
+          <kbd>Route</kbd>에
+          <kbd>Routes</kbd> import</li>
+        <li>
+          <kbd>Route</kbd>에서 <code>path-component</code> 설정</li>
+        <li>
+          <kbd>app.module</kbd>에 <code>Route class</code> import</li>
+        <li>
+          <kbd>Nav</kbd> setting</li>
+        <li>
+          <kbd>root Component</kbd>에 <code>&lt;router-outlet&gt;</code>배정</li>
+      </ol>
+    </div>
+    <div class="row topic">
+      <div class = "scroll-point" id = "section7"></div>
+      <h2>Write Code</h2>
+      <p>{{paragraph1}}</p>
+      <h4>angular2.component.html</h4>
+      <pre>{{code5}}</pre>
+      <h4>angular2.component.ts</h4>
+      <pre>{{code6}}</pre>
+    </div>
+    <div class = "row topic">
+      <div class = "scroll-point" id = "section8"></div>
+      <h2>Href Scrolling</h2>
+      <p>{{paragraph2}}</p>
+      <h4>angular2.component.ts</h4>
+      <pre>{{code7}}</pre>
+      <h4>angular2.component.html</h4>
+      <pre>{{code8}}</pre>
+    </div>
+
+  </div>
+</div>
