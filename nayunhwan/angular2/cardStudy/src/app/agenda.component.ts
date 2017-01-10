@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {Card} from "./Components/Card/card.model";
-import {ColumnService} from "./Components/Column/column.service";
-import {Column} from "./Components/Column/column.model";
+import { Card, Column, ColumnService } from './Components';
+
 @Component({
   selector: 'app-agenda',
   templateUrl: './agenda.component.html',
