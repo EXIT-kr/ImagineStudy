@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {Card} from "./Components/Card/card.model";
+import {Card} from "./Components/";
 
 @Component({
   selector: 'app-root',

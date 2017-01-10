@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { CardComponent } from './Components/Card/card.component';
-import { ColumnComponent } from './Components/Column/column.component';
-import { ColumnService } from "./Components/Column/column.service";
 import { HeaderComponent } from './header.component';
 import { AgendaComponent } from './agenda.component';
+
+/* Components */
+import { CardComponent } from './Components/';
+import { ColumnComponent } from './Components/';
+import { ColumnService } from "./Components/";
 
 import { ContainerComponent } from './container.component';
 import {BottomComponent} from "app/_includes/bottom.component";
