@@ -8,8 +8,7 @@ import {Component, Output, Input} from '@angular/core';
 
 
   export class CardComponent {
-  @Input() header: string = 'this is header';
-  @Input() footer: string = 'this is footer';
+
 }
 
 

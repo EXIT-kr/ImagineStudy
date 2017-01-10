@@ -1,10 +1,7 @@
-<h1>Single slot transclusion</h1>
-<card header="my header" footer="my footer">
-  <!-- put your dynamic content here -->
-  <div class="card-block">
-    <h4 class="card-title">You can put any content here</h4>
-    <p class="card-text">For example this line of text and</p>
-    <a href="#" class="btn btn-primary">This button</a>
-  </div>
-  <!-- end dynamic content -->
-  </card>
+<div class="column" *ngFor="let card of cards">
+<card>
+  <div class="card-head">{{card.head}}</div>
+  <div class="card-body">{{card.description}}</div>
+</card>
+</div>
+<button (click)="addCard()"></button>
