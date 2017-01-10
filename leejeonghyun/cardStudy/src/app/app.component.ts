@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {Card} from "app/card.model";
-import {CardService} from "app/card.service";
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

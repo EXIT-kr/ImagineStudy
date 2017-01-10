@@ -1,4 +1,454 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+  height:100%;
+  max-height: 100%;
+  min-height: 100%;
+  overflow-y: hidden;
+}
+body{
+  max-height: 100%;
+  min-height: 100%;
+}
+
+nav{
+  display: block;
+  padding: 10px;
+  background: white;
+  border-bottom: 1px solid #e1e2e4;
+}
+nav h1,
+nav h2,
+nav h3,
+nav h4,
+nav h5,
+nav h6{
+  padding-top: 4px;
+  margin: 0px;
+}
+
+
+
+/* Bootstrap Callout */
+.bs-callout {
+  padding: 20px;
+  margin: 20px 1px;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-right: 1px solid #e1e2e4;
+  border-radius: 3px;
+  background: white;
+  /*box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);*/
+}
+.bs-callout h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.bs-callout p:last-child {
+  margin-bottom: 0;
+}
+.bs-callout code {
+  border-radius: 3px;
+}
+.bs-callout+.bs-callout {
+  margin-top: -5px;
+}
+.bs-callout-default {
+  border-left-color: #777;
+}
+.bs-callout-default h4 {
+  color: #777;
+}
+.bs-callout-primary {
+  border-left-color: #428bca;
+}
+.bs-callout-primary h4 {
+  color: #428bca;
+}
+.bs-callout-success {
+  border-left-color: #5cb85c;
+}
+.bs-callout-success h4 {
+  color: #5cb85c;
+}
+.bs-callout-danger {
+  border-left-color: #d9534f;
+}
+.bs-callout-danger h4 {
+  color: #d9534f;
+}
+.bs-callout-warning {
+  border-left-color: #f0ad4e;
+}
+.bs-callout-warning h4 {
+  color: #f0ad4e;
+}
+.bs-callout-info {
+  border-left-color: #5bc0de;
+}
+.bs-callout-info h4 {
+  color: #5bc0de;
+}
+/* End Bootstrap Callout */
+
+
+/*
+
+About Login Page
+
+*/
+
+#login_left{
+  float: left;
+  width: 70%;
+  height: 100%;
+  background-image: url("/img/login_main.jpg");
+  background-size: cover;
+}
+#login_right{
+  float: left;
+  height: 100%;
+  width: 30%;
+}
+
+#login_wrapper{
+  color: white;
+  padding: 100px 30px;
+}
+
+
+/* About Top Panel */
+
+#topPanel{
+  float: left;
+  width: 95%;
+}
+
+/* End Top Panel */
+
+/* About Left Panel */
+
+#leftPanel{
+  /*padding: 10px;*/
+  float: left;
+  display: inline-block;
+  width: 5%;
+  background: #1F2228;
+  color: white;
+  height: 100%;
+}
+
+#leftPanel > a{
+  color: white;
+}
+
+#leftPanel .leftSection{
+  transition: 0.1s;
+  padding: 10px;
+}
+
+#leftPanel .leftSection:hover{
+  transition: 0.1s;
+  background: #5093E1;
+  padding: 10px;
+}
+
+#leftPanel .leftSection.active{
+  background: #5093E1;
+}
+
+/* End Left Panel */
+
+
+/* About Right Panel*/
+
+#rightPanel{
+  /*float: left;*/
+  display: inline-block;
+  width: 95%;
+  padding: 0px;
+  background: #fafafb;
+  margin-bottom: 61px;
+  height: 100%;
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+/* About Bottom Panel*/
+
+#bottomPanel{
+  z-index: 999999999;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  color: #97A5C6;
+  width: 95%;
+  background: white;
+  padding: 10px;
+  border-top: 1px solid #e1e2e4;
+}
+
+
+#bottom_msg{
+  margin-right: 10px;
+}
+
+/* End Bottom Panel*/
+
+
+#main{
+  height: 100%;
+}
+
+/* About Section Chat */
+
+#section_chat{
+
+}
+
+#section_chat a:hover{
+  text-decoration: none;
+}
+
+#section_chat a{
+  text-decoration: none;
+  color: white;
+}
+#section_chat li{
+  transition: 0.1s;
+  padding: 0px 3px;
+}
+#section_chat li.active{
+  border-radius: 3px;
+  background: #37c597;
+}
+#section_chat li:hover{
+  transition: 0.3s;
+  border-radius: 3px;
+  background: #1aafd0;
+}
+
+#chat_container{
+  float:left;
+  width: 80%;
+  max-height: calc(100% - 168px - 54px);
+}
+
+#chat_input{
+  margin-top: 15px;
+  bottom: 0px;
+}
+
+.msg_tool_box{
+  position: relative;
+  z-index: 99999999999;
+}
+
+/* End Section Chat */
+
+
+#section_members{
+
+}
+#section_members > .profile{
+  margin-right: 5px;
+}
+#nav_header{
+  padding: 10px
+}
+#nav_header h3{
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+#nav_header p{
+  padding: 0px;
+  margin: 0px;
+}
+
+
+
+#section_main{
+  color: white;
+  padding: 20px;
+  height: 320px;
+  background-position: 0px -450px;
+  background-image: url('/img/seoul.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#section_main > .header{
+
+}
+
+#section_main > .body{
+
+}
+
+/* About Section Sprint */
+
+#section_sprint{
+}
+
+#section_sprint a:hover{
+  text-decoration: none;
+}
+
+#section_sprint a{
+  text-decoration: none;
+  color: white;
+}
+#section_sprint li{
+  transition: 0.1s;
+  padding: 0px 3px;
+}
+#section_sprint li.active{
+  border-radius: 3px;
+  background: #37c597;
+}
+#section_sprint li:hover{
+  transition: 0.3s;
+  border-radius: 3px;
+  background: #1aafd0;
+}
+
+
+/* End Section Sprint */
+
+
+
+
+
+/* Profile */
+
+.profile{
+  border-radius: 100%;
+}
+
+#user_profile{
+  margin-right: 10px;
+}
+
+#bottomPanel .profile:hover{
+  border: 2px solid #5093E1;
+}
+
+.profile_bottom{
+  width: 40px;
+}
+
+.profile_x{
+  width: 32px;
+}
+
+.profile_2x{
+  width: 64px;
+}
+
+.profile_3x{
+  width: 128px;
+}
+
+.profile_4x{
+  width: 256px;
+}
+
+.profile_5x{
+  width: 512px;
+}
+
+
+/* About Scroll */
+.scroll-x{
+  overflow-x: auto;
+}
+
+.scroll-y{
+  overflow-y: auto;
+}
+
+.scroll{
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+
+/* About Name */
+
+#user_name{
+  margin-right: 10px;
+}
+
+/* End Name */
+
+
+
+
+/* Chat Message */
+
+message{
+  display: block;
+  padding: 15px;
+  margin: 10px 5px;
+  background: white;
+  border-radius: 3px;
+  border: 1px solid #e1e2e4;
+  /*box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);*/
+}
+
+message .header{
+  margin-bottom: 10px;
+}
+
+message .profile{
+  width: 32px;
+  margin-right: 5px;
+  border-radius: 100%;
+}
+
+message .name{
+  display: inline-block;
+  margin-right: 5px;
+}
+
+message .date{
+  display: inline-block;
+}
+
+
+message .msg{
+  margin-left: 10px;
+}
+
+
+
+
+/* Container */
+
+container{
+  display: block;
+  height: 100%;
+  max-height: 100%;
+  padding: 10px;
+}
+
+#sub_container{
+  overflow-y: scroll;
+  float:left;
+  width: 20%;
+  background: #E1EDF7;
+  height: calc(100% - 168px);
+  max-height: 100%;
+  border-right: 1px solid #e1e2e4;
+}
+
+container.sprintContainer{
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+}
+
+/* Card Board */
+
 card{
   display: inline-block;
   padding: 10px;
@@ -7,4 +457,36 @@ card{
   border-radius: 3px;
   border: 1px solid #e1e2e4;
   /*box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);*/
+}
+
+card > .header{
+
+}
+
+/* column */
+
+column{
+  overflow-y: scroll;
+  vertical-align: top;
+  width: 256px;
+  height: calc(100% - 168px);
+  display: inline-block;
+}
+
+column > .header{
+  margin-bottom: 20px;
+}
+
+column card{
+  display: block;
+  margin: 10px;
+}
+
+/* Channel */
+channel{
+  display: block;
+  padding:10px;
+  margin: 0px;
+  background: white;
+  border-bottom: 1px solid #e1e2e4;
 }

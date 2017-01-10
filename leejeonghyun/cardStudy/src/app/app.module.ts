@@ -10,6 +10,9 @@ import { HeaderComponent } from './header.component';
 import { AgendaComponent } from './agenda.component';
 import { ColumnComponent } from './column.component';
 import { ContainerComponent } from './container.component';
+import {BottomComponent} from "app/_includes/bottom.component";
+import {LeftComponent} from "app/_includes/left.component";
+import {TopComponent} from "app/_includes/top.component";
 
 @NgModule({
   declarations: [
@@ -18,7 +21,11 @@ import { ContainerComponent } from './container.component';
     HeaderComponent,
     AgendaComponent,
     ColumnComponent,
-    ContainerComponent
+    ContainerComponent,
+    LeftComponent,
+    TopComponent,
+    BottomComponent
+
   ],
   imports: [
     BrowserModule,
