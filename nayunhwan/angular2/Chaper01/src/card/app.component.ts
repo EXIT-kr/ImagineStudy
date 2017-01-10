@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Directive, Input } from '@angular/core';
 
 @Component({
   selector: 'card',
@@ -6,10 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 
+@Directive({
+  selector: 'myHighlight'
+})
 
 export class Card {
-  public name : String;
-  
-  title = 'card';
+  // public title : String;
+  // constructor(public title : String){
+  //   title = this.title;
+  // }
+  @Input('myHighlight') highlightColor: string;
+  debugger;
+  title = this.highlightColor
   text = 'hello world!';
+
 }
