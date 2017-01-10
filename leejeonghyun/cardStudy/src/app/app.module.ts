@@ -5,19 +5,27 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { CardComponent } from './card.component';
-import {CardService} from "app/card.service";
+import {ColumnService} from "app/column.service";
+import { HeaderComponent } from './header.component';
+import { AgendaComponent } from './agenda.component';
+import { ColumnComponent } from './column.component';
+import { ContainerComponent } from './container.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CardComponent
+    CardComponent,
+    HeaderComponent,
+    AgendaComponent,
+    ColumnComponent,
+    ContainerComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [CardService],
+  providers: [ColumnService],
   bootstrap: [AppComponent]
 
 })

@@ -1,0 +1,26 @@
+<!--<script>-->
+<!--function addCard(column){-->
+<!--console.log($(column).parents()[0]);-->
+
+<!--var card = $("<card>");-->
+
+<!--var cardHeader = $("<h4 />").addClass("header").text("New Header");-->
+<!--var cardDescription = $("<p />").text("New Description");-->
+<!--card.append(cardHeader).append(cardDescription);-->
+<!--console.log("card");-->
+<!--console.log(card);-->
+<!--$(column).parents()[0].append(card[0]);-->
+<!--}-->
+<!--</script>-->
+
+
+<container class="sprintContainer scroll-x">
+  <column *ngFor="let column of columns">
+    <h3 class="header text-center">column.title</h3>
+    <card *ngFor="let card of column.cards.cards">
+      <div class="card-head">{{card.head}}</div>
+      <div class="card-body">{{card.description}}</div>
+    </card>
+  </column>
+
+</container>

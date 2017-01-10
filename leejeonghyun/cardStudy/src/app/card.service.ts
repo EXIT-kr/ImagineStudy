@@ -6,7 +6,7 @@ export class CardService{
     {head:"head3",description:"desc3"}
 
   ];
-  getCards(){
+  getCards(column: number){
     return this.cards;
   };
   addCard(){

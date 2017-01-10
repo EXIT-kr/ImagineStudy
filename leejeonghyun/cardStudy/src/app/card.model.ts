@@ -6,5 +6,13 @@ export class Card{
     this.description = description;
   }
 }
+export class Cards{
+  public columnNumber: number;
+  public cards: Card[];
+  constructor(columnNumber:number){
+    this.columnNumber= columnNumber;
+    this.cards = [];
+  }
+}
 
 
