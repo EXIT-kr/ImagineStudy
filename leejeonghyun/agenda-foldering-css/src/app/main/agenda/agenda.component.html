@@ -1,0 +1,10 @@
+<container class="sprintContainer scroll-x">
+  <column *ngFor="let column of columns">
+    <h3 class="header text-center">{{column.title}}</h3>
+    <card *ngFor="let card of column.cards.cards">
+      <div class="card-head header">{{card.head}}</div>
+      <div class="card-body">{{card.description}}</div>
+    </card>
+  </column>
+
+</container>
